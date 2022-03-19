@@ -42,8 +42,8 @@ VALUES
 	('Directions For Visually Impaired'), 
 	('Obstacle Detection For Visually Impaired'),
 	('Movie Ratings'),
-	('Crossword Puzzle'),
-	('Word Search Puzzle'),
+	('Crossword Puzzles'),
+	('Word Search Puzzles'),
 	('One Minute'),
 	('SQL Repository'),
 	('Interact With Database');
@@ -54,8 +54,8 @@ VALUES
 	('A web application which gives directions to a specified location. This application is suitable for visually impaired users.'),
 	('An application which helps visually impaired people detect and recognize obstacles while walking.'),
 	('A web application which predicts the movie ratings by a particular occupation (e.g. teacher, doctor) for different genres (e.g. comedy, horror).'),
-	('An interactive crossword puzzle.'),
-	('An interactive word search puzzle.'),
+	('An number of interactive crossword puzzles.'),
+	('An number of interactive word search puzzle.'),
 	('A game which tests the user`s ability to not blink an eye three times or open the mouth in a whole minute.'),
 	('A Git repository with a number of SQL statement commits.'),
 	('An ASP .NET application which allows the users to view and modify a database. ');
