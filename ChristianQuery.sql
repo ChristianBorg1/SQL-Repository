@@ -182,3 +182,6 @@ GO
 
 DROP FUNCTION [IT].udf_SelectDescription;
 GO
+
+DROP PROCEDURE [IT].usp_Procedure;
+GO
