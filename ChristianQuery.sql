@@ -13,6 +13,9 @@ GO
 DROP TABLE [IT].[Descriptions];
 GO
 
+DROP SCHEMA [IT];
+GO
+
 CREATE SCHEMA [IT];
 GO
 
