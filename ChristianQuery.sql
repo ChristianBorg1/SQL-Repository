@@ -111,6 +111,7 @@ SELECT description_content
 FROM [IT].[Descriptions]
 GO
 
+/*
 CREATE TABLE [IT].[table1](
 	title_id INT PRIMARY KEY,
 	title NVARCHAR(200) 
@@ -122,23 +123,29 @@ CREATE TABLE [IT].[table2](
 	description_content NVARCHAR(MAX)
 );
 GO
+*/
 
 /* 1, 2, 3 */
+/*
 INSERT INTO [IT].[table1] (title_id,title)
 VALUES (
 	(SELECT title_id FROM [IT].[Titles] WHERE title_id = 3), 
 	(SELECT title FROM [IT].[Titles] WHERE title_id = 3)
 );
 GO
+*/
 
 /* 1, 2, 4 */
+/*
 INSERT INTO [IT].[table2] (description_id,description_content)
 VALUES (
 	(SELECT description_id FROM [IT].[Descriptions] WHERE description_id = 4), 
 	(SELECT description_content FROM [IT].[Descriptions] WHERE description_id = 4)
 );
 GO
+*/
 
+/*
 CREATE TABLE [IT].[table3](
 	project_id INT PRIMARY KEY,
 	title_id INT 
@@ -154,6 +161,7 @@ VALUES
 	(2,2,2),
 	(5,NULL,NULL)
 GO
+*/
 
 SELECT *
 FROM [IT].[table3]
@@ -191,7 +199,7 @@ GO
 /* returns the first 2 rows which are common in both table2 and table3 */ 
 /* AND the other row in table3 */ 
 
-
+/*
 DROP TABLE [IT].[table3];
 GO
 
@@ -200,6 +208,7 @@ GO
 
 DROP TABLE [IT].[table2];
 GO
+*/
 
 SELECT project_id, title, description_content
 FROM [IT].[Projects]
