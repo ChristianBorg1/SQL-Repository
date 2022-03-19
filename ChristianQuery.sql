@@ -7,6 +7,15 @@ GO
 CREATE SCHEMA [IT];
 GO
 
+DROP TABLE [IT].[Projects];
+GO
+
+DROP TABLE [IT].[Titles];
+GO
+
+DROP TABLE [IT].[Descriptions];
+GO
+
 CREATE TABLE [IT].[Titles](
 	title_id INT IDENTITY(1,1) PRIMARY KEY,
 	title NVARCHAR(200) NOT NULL
@@ -212,11 +221,8 @@ GO
 EXECUTE [IT].usp_Procedure 'Directions For Visually Impaired';
 GO
 
-DROP TABLE [IT].[Projects];
+UPDATE [IT].[Descriptions]
+	SET description_content = 'A game which tests the ABILITY OF THE USER to not blink an eye three times or open the mouth in a whole minute. '
+	WHERE description_id = 6;
 GO
 
-DROP TABLE [IT].[Titles];
-GO
-
-DROP TABLE [IT].[Descriptions];
-GO
