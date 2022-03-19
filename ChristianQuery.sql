@@ -205,3 +205,12 @@ GO
 
 EXECUTE [IT].usp_Procedure 'Directions For Visually Impaired';
 GO
+
+DROP TABLE [IT].[Projects];
+GO
+
+DROP TABLE [IT].[Titles];
+GO
+
+DROP TABLE [IT].[Descriptions];
+GO
