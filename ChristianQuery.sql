@@ -144,5 +144,5 @@ SELECT *
 FROM [IT].[table2]
 RIGHT OUTER JOIN [IT].[table3] ON [IT].[table2].description_id = [IT].[table3].description_id;
 GO
-/* returns the first 2 rows which are common in both table2 and table3 */ 
-/* AND the other row in table3 */ 
+/* returns the rows which are common in both table2 and table3 */ 
+/* AND the other rows in table3 */ 
