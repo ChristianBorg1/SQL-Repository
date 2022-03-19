@@ -146,3 +146,12 @@ RIGHT OUTER JOIN [IT].[table3] ON [IT].[table2].description_id = [IT].[table3].d
 GO
 /* returns the rows which are common in both table2 and table3 */ 
 /* AND the other rows in table3 */ 
+
+DROP TABLE [IT].[table3];
+GO
+
+DROP TABLE [IT].[table1];
+GO
+
+DROP TABLE [IT].[table2];
+GO
