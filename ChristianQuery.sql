@@ -185,3 +185,20 @@ GO
 
 DROP PROCEDURE [IT].usp_Procedure;
 GO
+
+CREATE PROCEDURE [IT].usp_Procedure(@title NVARCHAR(200))
+AS
+BEGIN
+	DECLARE @id INT
+
+	SELECT @id = 
+	project_id FROM [IT].[Projects]
+		INNER JOIN [IT].[Titles] ON [IT].[Projects].title_id = [IT].[Titles].title_id
+		INNER JOIN [IT].[Descriptions] ON [IT].[Projects].description_id = [IT].[Descriptions].description_id
+	WHERE title = @title AND description_content = [IT].udf_SelectDescription(@title)
+
+	SELECT(CONCAT('The project id is: ',@id))
+	SELECT(CONCAT('The project title is: ',@title))
+	SELECT(CONCAT('The project description is: ',[IT].udf_SelectDescription(@title)))
+END;
+GO
