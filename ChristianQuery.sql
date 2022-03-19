@@ -4,6 +4,12 @@ GO
 USE [ChristianPortfolio];
 GO
 
+DROP PROCEDURE [IT].usp_Procedure;
+GO
+
+DROP FUNCTION [IT].udf_SelectDescription;
+GO
+
 DROP TABLE [IT].[Projects];
 GO
 
@@ -195,9 +201,6 @@ INNER JOIN [IT].[Titles] ON [IT].[Projects].title_id = [IT].[Titles].title_id
 INNER JOIN [IT].[Descriptions] ON [IT].[Projects].description_id = [IT].[Descriptions].description_id;
 GO
 
-DROP FUNCTION [IT].udf_SelectDescription;
-GO
-
 CREATE FUNCTION [IT].udf_SelectDescription(@title NVARCHAR(200))
 RETURNS NVARCHAR(MAX)
 AS
@@ -214,9 +217,6 @@ GO
 --this function outputs the Description of the inputted Title
 
 SELECT [IT].udf_SelectDescription('Crossword Puzzle');
-GO
-
-DROP PROCEDURE [IT].usp_Procedure;
 GO
 
 CREATE PROCEDURE [IT].usp_Procedure(@title NVARCHAR(200))
