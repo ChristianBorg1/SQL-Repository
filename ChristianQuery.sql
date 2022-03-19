@@ -4,9 +4,6 @@ GO
 USE [ChristianPortfolio];
 GO
 
-CREATE SCHEMA [IT];
-GO
-
 DROP TABLE [IT].[Projects];
 GO
 
@@ -14,6 +11,9 @@ DROP TABLE [IT].[Titles];
 GO
 
 DROP TABLE [IT].[Descriptions];
+GO
+
+CREATE SCHEMA [IT];
 GO
 
 CREATE TABLE [IT].[Titles](
