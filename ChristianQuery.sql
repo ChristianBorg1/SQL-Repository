@@ -1,3 +1,9 @@
+USE [master];
+GO
+
+DROP DATABASE [ChristianPortfolio];
+GO
+
 CREATE DATABASE [ChristianPortfolio];
 GO
 
