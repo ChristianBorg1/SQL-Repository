@@ -1,11 +1,13 @@
 USE [master];
 GO
 
+/*
 DROP DATABASE [ChristianPortfolio];
 GO
 
 CREATE DATABASE [ChristianPortfolio];
 GO
+*/
 
 USE [ChristianPortfolio];
 GO
@@ -24,12 +26,12 @@ GO
 
 DROP TABLE [IT].[Descriptions];
 GO
-
+/*
 DROP SCHEMA [IT];
 GO
 
 CREATE SCHEMA [IT];
-GO
+GO*/
 
 CREATE TABLE [IT].[Titles](
 	title_id INT IDENTITY(1,1) PRIMARY KEY,
