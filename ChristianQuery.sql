@@ -202,3 +202,6 @@ BEGIN
 	SELECT(CONCAT('The project description is: ',[IT].udf_SelectDescription(@title)))
 END;
 GO
+
+EXECUTE [IT].usp_Procedure 'Directions For Visually Impaired';
+GO
