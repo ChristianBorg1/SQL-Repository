@@ -233,7 +233,7 @@ END;
 GO
 --this function outputs the Description of the inputted Title
 
-SELECT [IT].udf_SelectDescription('Crossword Puzzle');
+SELECT [IT].udf_SelectDescription('Crossword Puzzles');
 GO
 
 CREATE PROCEDURE [IT].usp_Procedure(@title NVARCHAR(200))
