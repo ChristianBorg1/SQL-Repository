@@ -241,6 +241,21 @@ UPDATE [IT].[Descriptions]
 	WHERE description_id = 6;
 GO
 
+DELETE FROM [IT].[Projects]
+WHERE project_id = 6
+OR project_id = 10;
+GO
+
+DELETE FROM [IT].[Titles]
+WHERE title_id = 6
+OR title_id = 10;
+GO
+
+DELETE FROM [IT].[Descriptions]
+WHERE description_id = 6
+OR description_id = 10;
+GO
+
 CREATE PROCEDURE [IT].usp_Procedure(@title NVARCHAR(200))
 AS
 BEGIN
